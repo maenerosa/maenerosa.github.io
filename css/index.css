@@ -9,7 +9,7 @@
 }
 
 :root {
-  --bg-color: #020312;
+  --bg-color: #020312d5;
   --text-color: #fff;
   --main-color: #ff32eb;
   --second-color: #929292;
@@ -38,7 +38,7 @@ header {
   background: transparent;
   padding: 22px 16%;
   border-bottom: 1px solid transparent;
-  transition: all 0.4 ease;
+  transition: all 0.4s ease;
 }
 
 .logo img {
@@ -139,5 +139,68 @@ header.sticky {
   padding: 10px 16%;
   background: var(--bg-color);
   border-bottom: 1px solid #0e1630;
-  transition: 0.3s;
+}
+
+@media (max-width: 1325px) {
+  header {
+    padding: 16px 3%;
+  }
+  header.sticky {
+    padding: 8px 3%;
+  }
+  section {
+    padding: 130px 3% 60px;
+  }
+}
+
+@media (max-width: 970px) {
+  :root {
+    --h1-font: 4.2rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+  }
+  section {
+    padding: 70px 3% 60px;
+  }
+  .intro {
+    height: 85vh;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img img {
+    text-align: center;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 830px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: -600px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #12141c;
+    text-align: left;
+    transition: all 0.4s ease;
+  }
+  .navbar a {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  :root {
+    --h1-font: 3.7rem;
+    --h2-font: 2.7rem;
+  }
 }
