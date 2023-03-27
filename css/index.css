@@ -14,8 +14,8 @@
   --main-color: #ff32eb;
   --second-color: #929292;
   --other-color: #12141c;
-  --h1-font: 5.2rem;
-  --h2-font: 3.5rem;
+  --h1-font: 3.2rem;
+  --h2-font: 2.5rem;
   --p-font: 1.1rem;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .logo img {
-  width: 135px;
+  width: 185px;
   height: auto;
 }
 
@@ -83,12 +83,13 @@ section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(../images/background.jpg);
+  background: url(../images/mybackground.svg);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  border: #000000 solid 3px;
 }
 
 .intro-text h1 {
@@ -96,7 +97,7 @@ section {
   font-size: var(--h1-font);
   font-weight: bold;
   line-height: 1.1;
-  letter-spacing: 2px;
+  opacity: 0.9;
 }
 
 span {
@@ -107,12 +108,14 @@ span {
   color: var(--main-color);
   font-size: 28px;
   font-weight: 600;
+  opacity: 0.9;
 }
 
 .intro-text h3 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 3rem;
+  opacity: 0.9;
 }
 
 .btn {
@@ -133,6 +136,9 @@ span {
   border: 1px solid var(--main-color);
 }
 
+.about-img img {
+  border-radius: 30%;
+}
 /* Header Sticky Design */
 
 header.sticky {
@@ -165,14 +171,9 @@ header.sticky {
   .intro {
     height: 85vh;
   }
-  .about {
-    grid-template-columns: 1fr;
-  }
+
   .about-img img {
     text-align: center;
-  }
-  .contact {
-    grid-template-columns: 1fr;
   }
 }
 
