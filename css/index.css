@@ -83,13 +83,13 @@ section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(../images/mybackground.svg);
+  background: url(../images/background.svg);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  border: #000000 solid 3px;
+  border: #020312d5 solid 3px;
 }
 
 .intro-text h1 {
@@ -250,7 +250,7 @@ header.sticky {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 600px;
   }
 
   .intro {
