@@ -42,7 +42,7 @@ header {
 }
 
 .logo img {
-  width: 185px;
+  width: 170px;
   height: auto;
 }
 
@@ -137,7 +137,7 @@ span {
 }
 
 .about-img img {
-  border-radius: 30%;
+  border-radius: 5%;
 }
 /* Header Sticky Design */
 
@@ -146,6 +146,8 @@ header.sticky {
   background: var(--bg-color);
   border-bottom: 1px solid #0e1630;
 }
+
+/* Desktop Device */
 
 @media (max-width: 1325px) {
   header {
@@ -157,9 +159,23 @@ header.sticky {
   section {
     padding: 130px 3% 60px;
   }
+  .contact-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
-@media (max-width: 970px) {
+/* Tablet Device */
+
+@media (min-width: 768px) and (max-width: 915px) {
   :root {
     --h1-font: 4.2rem;
     --h2-font: 2.9rem;
@@ -175,9 +191,25 @@ header.sticky {
   .about-img img {
     text-align: center;
   }
+
+  .contact-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
-@media (max-width: 830px) {
+/* Mobile Device */
+
+@media (min-width: 360px) and (max-width: 915px) {
   #menu-icon {
     display: block;
   }
@@ -188,7 +220,7 @@ header.sticky {
     left: 0;
     display: flex;
     flex-direction: column;
-    background: #12141c;
+    background: #020312;
     text-align: left;
     transition: all 0.4s ease;
   }
@@ -203,5 +235,54 @@ header.sticky {
   :root {
     --h1-font: 3.7rem;
     --h2-font: 2.7rem;
+  }
+  .contact-me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Samsung Galaxy A51/71 Devices */
+
+@media (min-width: 412px) and (max-width: 914px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: -600px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #020312;
+    text-align: left;
+    transition: all 0.4s ease;
+  }
+  .navbar a {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  :root {
+    --h1-font: 3.7rem;
+    --h2-font: 2.7rem;
+  }
+  .contact-me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
