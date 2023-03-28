@@ -255,8 +255,9 @@ header.sticky {
 
   .intro {
     background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     opacity: 0.8;
   }
 
