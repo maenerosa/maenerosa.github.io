@@ -109,6 +109,7 @@ form textarea {
 
 .contact-form form .send {
   display: inline-block;
+  margin-top: 0.5rem;
   font-size: 17px;
   font-weight: 500;
   background: var(--main-color);

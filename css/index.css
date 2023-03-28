@@ -209,7 +209,7 @@ header.sticky {
 
 /* Mobile Device */
 
-@media (min-width: 360px) and (max-width: 915px) {
+@media (min-width: 320px) and (max-width: 915px) {
   #menu-icon {
     display: block;
   }
@@ -243,46 +243,31 @@ header.sticky {
   .about {
     margin-top: 5rem;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
   }
-}
 
-/* Samsung Galaxy A51/71 Devices */
-
-@media (min-width: 412px) and (max-width: 914px) {
-  #menu-icon {
-    display: block;
-  }
-  .navbar {
-    position: absolute;
-    top: -600px;
-    right: 0;
-    left: 0;
+  .about-img {
     display: flex;
-    flex-direction: column;
-    background: #020312;
-    text-align: left;
-    transition: all 0.4s ease;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
   }
-  .navbar a {
-    display: block;
-    padding: 1rem;
-    margin: 1rem;
+
+  .intro {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.8;
   }
-  .navbar.active {
-    top: 100%;
+
+  .intro h4,
+  .intro h1,
+  .intro h3 {
+    font-size: 30px;
+    margin-top: 3rem;
   }
-  :root {
-    --h1-font: 3.7rem;
-    --h2-font: 2.7rem;
-  }
-  .contact-me {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .about {
-    margin-top: 5rem;
-    flex-direction: column;
-    align-items: flex-start;
+
+  .intro a {
+    font-size: 14px;
   }
 }

@@ -21,7 +21,14 @@
 
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+
+.about-img {
+  height: auto;
+  width: 100%;
 }
 
 .about-me h2 {
