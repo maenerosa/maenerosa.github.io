@@ -83,7 +83,7 @@ section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(../images/background.svg);
+  background: url(../images/mybackground.svg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -260,9 +260,10 @@ header.sticky {
     background-size: cover;
     opacity: 0.8;
   }
-
+  .intro h1 {
+    font-size: 80px;
+  }
   .intro h4,
-  .intro h1,
   .intro h3 {
     font-size: 30px;
     margin-top: 3rem;
