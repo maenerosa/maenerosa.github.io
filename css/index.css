@@ -205,6 +205,9 @@ header.sticky {
     align-items: center;
     gap: 2rem;
   }
+  .intro h1 {
+    font-size: 60px;
+  }
 }
 
 /* Mobile Device */
@@ -261,7 +264,7 @@ header.sticky {
     opacity: 0.8;
   }
   .intro h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
   .intro h4,
   .intro h3 {
