@@ -36,13 +36,14 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 22px 16%;
+  padding: 25px 16%;
+  height: 80px;
   border-bottom: 1px solid transparent;
   transition: all 0.4s ease;
 }
 
 .logo img {
-  width: 170px;
+  width: 150px;
   height: auto;
 }
 
@@ -93,8 +94,8 @@ section {
 }
 
 .intro-text h1 {
+  font-size: 40px;
   margin: 20px 0;
-  font-size: var(--h1-font);
   font-weight: bold;
   line-height: 1.1;
   opacity: 0.9;
@@ -106,13 +107,13 @@ span {
 
 .intro-text h4 {
   color: var(--main-color);
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   opacity: 0.9;
 }
 
 .intro-text h3 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 3rem;
   opacity: 0.9;
@@ -142,22 +143,15 @@ span {
 /* Header Sticky Design */
 
 header.sticky {
-  padding: 10px 16%;
+  padding: 22px 16%;
   background: var(--bg-color);
-  border-bottom: 1px solid #0e1630;
 }
 
 /* Desktop Device */
 
 @media (max-width: 1325px) {
-  header {
-    padding: 16px 3%;
-  }
-  header.sticky {
-    padding: 8px 3%;
-  }
   section {
-    padding: 130px 3% 60px;
+    padding: 130px 60px;
   }
   .contact-me {
     display: grid;
@@ -181,8 +175,9 @@ header.sticky {
     --h2-font: 2.9rem;
     --p-font: 1rem;
   }
+
   section {
-    padding: 70px 3% 60px;
+    padding: 70px 60px;
   }
   .intro {
     height: 85vh;
@@ -206,7 +201,7 @@ header.sticky {
     gap: 2rem;
   }
   .intro h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -215,6 +210,9 @@ header.sticky {
 @media (min-width: 320px) and (max-width: 915px) {
   #menu-icon {
     display: block;
+  }
+  section {
+    padding: 70px 60px;
   }
   .navbar {
     position: absolute;
@@ -235,16 +233,12 @@ header.sticky {
   .navbar.active {
     top: 100%;
   }
-  :root {
-    --h1-font: 3.7rem;
-    --h2-font: 2.7rem;
-  }
   .contact-me {
     flex-direction: column;
     align-items: flex-start;
   }
   .about {
-    margin-top: 5rem;
+    margin-top: 2rem;
     flex-direction: column;
     text-align: center;
   }
@@ -253,26 +247,25 @@ header.sticky {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
   }
 
   .intro {
-    background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150%;
     opacity: 0.8;
   }
   .intro h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .intro h4,
   .intro h3 {
-    font-size: 30px;
-    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 1rem;
   }
 
   .intro a {
     font-size: 14px;
+    font-weight: bold;
   }
 }
