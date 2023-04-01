@@ -143,7 +143,7 @@ span {
 /* Header Sticky Design */
 
 header.sticky {
-  padding: 22px 16%;
+  padding: 8px 3% 16px;
   background: var(--bg-color);
 }
 
@@ -153,6 +153,7 @@ header.sticky {
   section {
     padding: 130px 60px;
   }
+
   .contact-me {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -211,6 +212,11 @@ header.sticky {
   #menu-icon {
     display: block;
   }
+
+  header.sticky {
+    padding: 8px 3% 16px;
+  }
+
   section {
     padding: 70px 60px;
   }
@@ -251,6 +257,7 @@ header.sticky {
 
   .intro {
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: 150%;
     opacity: 0.8;
   }
