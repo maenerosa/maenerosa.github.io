@@ -8,20 +8,9 @@
   scroll-behavior: smooth;
 }
 
-:root {
-  --bg-color: #020312d5;
-  --text-color: #fff;
-  --main-color: #ff32eb;
-  --second-color: #929292;
-  --other-color: #12141c;
-  --h1-font: 3.2rem;
-  --h2-font: 2.5rem;
-  --p-font: 1.1rem;
-}
-
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background: #020312;
+  color: #ffff;
 }
 
 /* Start of Naviagtion */
@@ -36,7 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 25px 16%;
+  padding: 22px 16%;
   height: 80px;
   border-bottom: 1px solid transparent;
   transition: all 0.4s ease;
@@ -51,8 +40,8 @@ header {
   display: flex;
 }
 .navbar a {
-  color: var(--second-color);
-  font-size: var(--p-font);
+  color: #707070;
+  font-size: 1.1rem;
   font-weight: 600;
   padding: 10px 25px;
   margin: 0 2px;
@@ -60,13 +49,13 @@ header {
   transition: all 0.4s ease;
 }
 .navbar a:hover {
-  background: var(--main-color);
-  color: var(--text-color);
+  background: #f578e8;
+  color: #ffff;
 }
 
 #menu-icon {
   font-size: 36px;
-  color: var(--text-color);
+  color: #ffff;
   z-index: 10001;
   cursor: pointer;
   display: none;
@@ -90,30 +79,30 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  border: #020312d5 solid 3px;
 }
 
 .intro-text h1 {
-  font-size: 40px;
   margin: 20px 0;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1.1;
+  letter-spacing: 2px;
   opacity: 0.9;
 }
 
 span {
-  color: var(--main-color);
+  color: #f578e8;
 }
 
 .intro-text h4 {
-  color: var(--main-color);
-  font-size: 20px;
+  color: #f578e8;
+  font-size: 24px;
   font-weight: 600;
   opacity: 0.9;
 }
 
 .intro-text h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 3rem;
   opacity: 0.9;
@@ -125,16 +114,16 @@ span {
   border-radius: 0.5rem;
   font-size: 17px;
   font-weight: 500;
-  background: var(--main-color);
-  color: var(--text-color);
-  border: 1px solid var(--main-color);
+  background: #f578e8;
+  color: #ffff;
+  border: 1px solid #f578e8;
   transition: all 0.4s ease;
 }
 
 .btn:hover {
   transform: scale(1.01) translateY(-5px);
   background: transparent;
-  border: 1px solid var(--main-color);
+  border: 1px solid #f578e8;
 }
 
 .about-img img {
@@ -143,46 +132,43 @@ span {
 /* Header Sticky Design */
 
 header.sticky {
-  padding: 8px 3% 16px;
-  background: var(--bg-color);
+  padding: 10px 16%;
+  background: #020312d5;
+  border-bottom: 1px solid #0e1630;
+  transition: 0.3s;
 }
 
 /* About Section */
 
 .about {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
 }
 
-.about-img {
-  width: 100%;
-  margin-right: 3rem;
-}
-
 .about-me h2 {
-  font-size: var(--h2-font);
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .about-me h4 {
   margin: 10px 0;
-  color: var(--main-color);
+  color: #f578e8;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
 .about-me p {
-  color: var(--second-color);
-  font-size: var(--p-font);
+  color: #707070;
+  font-size: 1.1rem;
   line-height: 30px;
   margin-bottom: 2rem;
 }
 
-.skills {
+.about-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   align-items: center;
@@ -195,7 +181,7 @@ header.sticky {
   font-weight: 600;
 }
 
-.about-img img {
+.about-img {
   height: auto;
   width: 100%;
   max-width: 460px;
@@ -210,12 +196,12 @@ header.sticky {
 }
 
 .services h2 {
-  font-size: var(--h2-font);
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .services h4 {
-  color: var(--main-color);
+  color: #f578e8;
   font-size: 24px;
   font-weight: 600;
 }
@@ -251,18 +237,18 @@ header.sticky {
 }
 
 .service-box p {
-  color: var(--second-color);
-  font-size: var(--p-font);
+  color: #707070;
+  font-size: 1.1rem;
   line-height: 30px;
 }
 
 .service-box:hover {
   transform: scale(1.01) translateY(-5px);
-  border-top: 5px solid var(--main-color);
+  border-top: 5px solid #f578e8;
 }
 
 .service-box:hover h3 {
-  color: var(--main-color);
+  color: #f578e8;
 }
 
 /* End of Service Section */
@@ -274,12 +260,12 @@ header.sticky {
 }
 
 .projects h2 {
-  font-size: var(--h2-font);
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .projects h4 {
-  color: var(--main-color);
+  color: #f578e8;
   font-size: 24px;
   font-weight: 600;
 }
@@ -319,7 +305,7 @@ header.sticky {
 }
 
 .row h6 {
-  color: var(--main-color);
+  color: #f578e8;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -345,18 +331,18 @@ header.sticky {
 
 .contact h4 {
   margin: 15px 0;
-  color: var(--main-color);
+  color: #f578e8;
   font-size: 20px;
   font-weight: 600;
 }
 
 .contact h2 {
-  font-size: var(--h2-font);
+  font-size: 2.5rem;
 }
 
 .contact p {
-  color: var(--second-color);
-  font-size: var(--p-font);
+  color: #707070;
+  font-size: 1.1rem;
   line-height: 30px;
   margin-bottom: 2rem;
 }
@@ -372,15 +358,15 @@ header.sticky {
 
 .contact-list li a {
   display: block;
-  color: var(--second-color);
-  font-size: var(--p-font);
+  color: #707070;
+  font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.4s ease;
 }
 
 .contact-list li a:hover {
   transform: scale(1.01) translateY(-5px);
-  color: var(--main-color);
+  color: #f578e8;
 }
 
 .contact-icons i {
@@ -388,7 +374,7 @@ header.sticky {
   width: 40px;
   background: #12141c;
   border-radius: 0.5rem;
-  color: var(--main-color);
+  color: #f578e8;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -399,8 +385,8 @@ header.sticky {
 
 .contact-icons i:hover {
   transform: scale(1.01) translateY(-5px);
-  background: var(--main-color);
-  color: var(--text-color);
+  background: #f578e8;
+  color: #ffff;
 }
 
 .contact-form form {
@@ -414,7 +400,7 @@ form textarea {
   width: 100%;
   padding: 18px;
   background: #12141c;
-  color: var(--text-color);
+  color: #ffff;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -431,8 +417,8 @@ form textarea {
   margin-top: 0.5rem;
   font-size: 17px;
   font-weight: 500;
-  background: var(--main-color);
-  color: var(--text-color);
+  background: #f578e8;
+  color: #ffff;
   width: 190px;
   transition: all 0.4s ease;
   cursor: pointer;
@@ -441,7 +427,7 @@ form textarea {
 .developed-by p {
   text-align: center;
   padding: 15px;
-  color: var(--second-color);
+  color: #707070;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -454,8 +440,8 @@ form textarea {
 }
 
 .top i {
-  color: var(--text-color);
-  background: var(--main-color);
+  color: #ffff;
+  background: #f578e8;
   font-size: 20px;
   padding: 10px;
   border-radius: 0.5rem;
