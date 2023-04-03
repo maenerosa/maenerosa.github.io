@@ -520,40 +520,10 @@ form textarea {
   .navbar.active {
     top: 100%;
   }
-  .contact-me {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .about {
-    margin-top: 2rem;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .intro {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 150%;
     opacity: 0.8;
-  }
-  .intro h1 {
-    font-size: 40px;
-  }
-  .intro h4,
-  .intro h3 {
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: 1rem;
-  }
-
-  .intro a {
-    font-size: 14px;
-    font-weight: bold;
   }
 }
