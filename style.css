@@ -127,7 +127,9 @@ span {
 }
 
 .about-img img {
-  border-radius: 5%;
+  border: solid 2px transparent;
+  border-radius: 40%;
+  height: auto;
 }
 /* Header Sticky Design */
 
@@ -178,12 +180,6 @@ header.sticky {
 .skill h5 {
   font-size: 15px;
   font-weight: 600;
-}
-
-.about-img {
-  height: auto;
-  width: 100%;
-  max-width: 460px;
 }
 
 /* End of About Section */
@@ -453,7 +449,7 @@ form textarea {
 
 /* Desktop Device */
 
-@media (max-width: 1325px) {
+@media (max-width: 1200px) {
   header {
     padding: 16px 3%;
   }
@@ -461,7 +457,7 @@ form textarea {
     padding: 8px 3%;
   }
   section {
-    padding: 100px 3% 60px;
+    padding: 70px 10% 60px;
   }
 }
 
@@ -475,11 +471,6 @@ form textarea {
     height: 85vh;
     width: 100%;
   }
-
-  .about-img {
-    align-items: center;
-  }
-
   .contact-me {
     display: grid;
     grid-template-columns: 1fr;
@@ -491,6 +482,7 @@ form textarea {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
   }
   .intro {
@@ -503,9 +495,9 @@ form textarea {
 
 /* Mobile Device */
 
-@media (max-width: 830px) {
+@media (min-width: 300px) and (max-width: 768px) {
   section {
-    padding: 70px 10% 60px;
+    padding: 70px 6% 60px;
   }
 
   #menu-icon {
