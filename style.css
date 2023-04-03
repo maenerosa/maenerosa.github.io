@@ -135,7 +135,6 @@ header.sticky {
   padding: 10px 16%;
   background: #020312d5;
   border-bottom: 1px solid #0e1630;
-  transition: 0.3s;
 }
 
 /* About Section */
@@ -255,7 +254,7 @@ header.sticky {
 
 /* Project Section */
 
-.projects {
+.main-projects {
   text-align: center;
 }
 
@@ -326,6 +325,8 @@ header.sticky {
 
 .contact-me {
   display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 3rem;
 }
 
@@ -375,6 +376,7 @@ header.sticky {
   background: #12141c;
   border-radius: 0.5rem;
   color: #f578e8;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -409,7 +411,7 @@ form textarea {
 
 .contact-form textarea {
   resize: none;
-  height: 240px;
+  height: 220px;
 }
 
 .contact-form form .send {
@@ -452,8 +454,14 @@ form textarea {
 /* Desktop Device */
 
 @media (max-width: 1325px) {
+  header {
+    padding: 16px 3%;
+  }
+  header.sticky {
+    padding: 8px 3%;
+  }
   section {
-    padding: 70px 60px;
+    padding: 130px 3% 60px;
   }
 
   .contact-me {
@@ -473,12 +481,6 @@ form textarea {
 /* Tablet Device */
 
 @media (min-width: 768px) and (max-width: 915px) {
-  :root {
-    --h1-font: 4.2rem;
-    --h2-font: 2.9rem;
-    --p-font: 1rem;
-  }
-
   section {
     padding: 70px 60px;
   }
