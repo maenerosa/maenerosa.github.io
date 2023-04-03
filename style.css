@@ -147,7 +147,7 @@ header.sticky {
 }
 
 .about-me h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -162,7 +162,7 @@ header.sticky {
 
 .about-me p {
   color: #707070;
-  font-size: 1.1rem;
+  font-size: 14px;
   line-height: 30px;
   margin-bottom: 2rem;
 }
@@ -176,7 +176,7 @@ header.sticky {
 }
 
 .skill h5 {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -195,7 +195,7 @@ header.sticky {
 }
 
 .services h2 {
-  font-size: 2.5rem;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -461,7 +461,7 @@ form textarea {
     padding: 8px 3%;
   }
   section {
-    padding: 130px 3% 60px;
+    padding: 100px 3% 60px;
   }
 }
 
@@ -469,10 +469,11 @@ form textarea {
 
 @media (max-width: 970px) {
   section {
-    padding: 70px 3% 60px;
+    padding: 70px 10% 60px;
   }
   .intro {
     height: 85vh;
+    width: 100%;
   }
 
   .about-img {
@@ -492,15 +493,24 @@ form textarea {
     align-items: center;
     gap: 2rem;
   }
+  .intro {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    opacity: 0.8;
+  }
 }
 
 /* Mobile Device */
 
 @media (max-width: 830px) {
+  section {
+    padding: 70px 10% 60px;
+  }
+
   #menu-icon {
     display: block;
   }
-
   .navbar {
     position: absolute;
     top: -600px;
