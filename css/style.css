@@ -203,6 +203,70 @@ header.sticky {
 
 /* End of About Section */
 
+/* Services Section */
+
+.services {
+  text-align: center;
+}
+
+.services h2 {
+  font-size: var(--h2-font);
+  margin-bottom: 10px;
+}
+
+.services h4 {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.service-box {
+  padding: 45px;
+  background: #12141c;
+  border-top: 5px solid transparent;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.service-box img {
+  height: auto;
+  width: 100%;
+}
+
+.service-box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+  transition: all 0.4s ease;
+}
+
+.service-box p {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+}
+
+.service-box:hover {
+  transform: scale(1.01) translateY(-5px);
+  border-top: 5px solid var(--main-color);
+}
+
+.service-box:hover h3 {
+  color: var(--main-color);
+}
+
+/* End of Service Section */
+
 /* Project Section */
 
 .projects {
