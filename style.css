@@ -463,67 +463,44 @@ form textarea {
   section {
     padding: 130px 3% 60px;
   }
-
-  .contact-me {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3rem;
-  }
-  .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-  }
 }
 
 /* Tablet Device */
 
-@media (min-width: 768px) and (max-width: 915px) {
+@media (max-width: 970px) {
   section {
-    padding: 70px 60px;
+    padding: 70px 3% 60px;
   }
   .intro {
     height: 85vh;
   }
 
-  .about-img img {
-    text-align: center;
+  .about-img {
+    align-items: center;
   }
 
   .contact-me {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 3rem;
   }
 
   .about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 2rem;
-  }
-  .intro h1 {
-    font-size: 40px;
   }
 }
 
 /* Mobile Device */
 
-@media (min-width: 320px) and (max-width: 915px) {
+@media (max-width: 830px) {
   #menu-icon {
     display: block;
   }
 
-  header.sticky {
-    padding: 8px 3% 16px;
-  }
-
-  section {
-    padding: 70px 60px;
-  }
   .navbar {
     position: absolute;
     top: -600px;
