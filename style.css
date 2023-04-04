@@ -324,7 +324,6 @@ header.sticky {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
 }
 
 .row-text h3 {
@@ -337,7 +336,9 @@ header.sticky {
   color: #f578e8;
   font-size: 16px;
   font-weight: 500;
+  text-align: left;
   letter-spacing: 1px;
+  margin-top: 1rem;
 }
 
 .row-icon i {
