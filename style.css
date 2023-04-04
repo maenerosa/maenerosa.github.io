@@ -126,11 +126,6 @@ span {
   border: 1px solid #f578e8;
 }
 
-.about-img img {
-  border: solid 2px transparent;
-  border-radius: 40%;
-  height: auto;
-}
 /* Header Sticky Design */
 
 header.sticky {
@@ -149,7 +144,7 @@ header.sticky {
 }
 
 .about-me {
-  padding: 45px;
+  padding: 40px 30px;
   background: #12141c;
   border-top: 5px solid transparent;
   border-radius: 0.5rem;
@@ -165,14 +160,14 @@ header.sticky {
 .about-me h4 {
   margin: 10px 0;
   color: #f578e8;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
 .about-me p {
   color: #707070;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   margin-bottom: 2rem;
 }
@@ -512,6 +507,12 @@ form textarea {
     gap: 3rem;
   }
 
+  .contact-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
   .about {
     display: grid;
     grid-template-columns: 1fr;
