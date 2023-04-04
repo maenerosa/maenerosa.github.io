@@ -186,12 +186,11 @@ header.sticky {
   align-items: center;
   text-align: center;
   gap: 2rem;
-  margin-top: 5rem;
 }
 
 .skill-header h2 {
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5rem;
 }
 
 .skills-wrapper img {
@@ -199,16 +198,22 @@ header.sticky {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .icon-card {
   background-color: #12141c;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px #ffff;
-  padding: 20px;
-  margin: 10px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 2rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.icon-card:hover {
+  transform: scale(1.01) translateY(-5px);
+  border: 3px solid #ffffff;
 }
 
 /* End of Skills Section */

@@ -24,7 +24,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(".intro-text", { delay: 190, origin: "bottom" });
-sr.reveal(".about,.services,.projects,.contact", {
+sr.reveal(".about,.skills,.services,.projects,.contact", {
   delay: 200,
   origin: "bottom",
 });
