@@ -177,20 +177,41 @@ header.sticky {
   margin-bottom: 2rem;
 }
 
-.about-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
-}
-
-.skill h5 {
-  font-size: 15px;
-  font-weight: 600;
-}
-
 /* End of About Section */
+
+/* Skills Section */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.skill-header h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #12141c;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px #ffff;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* End of Skills Section */
 
 /* Services Section */
 
