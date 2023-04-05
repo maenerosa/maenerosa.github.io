@@ -523,7 +523,7 @@ form textarea {
   .intro {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
     opacity: 0.8;
   }
 }
@@ -560,7 +560,7 @@ form textarea {
   .intro {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 160%;
     opacity: 0.8;
   }
 }
